@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minmum-scale=1.0, user-scalable=no">
+        
+        <title>Portfolio - Navbar</title>
+
+        <!-- saved from url=(0013)about:internet--> <!--인터넷 익스플로러에 발생할수 있는 자바 스크립트 경고창 무시-->
+    
+        <!-- icon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Heebo|Noto+Sans+KR" rel="stylesheet">
+
+        <!-- user style -->
+        <link rel="stylesheet" href="portfolio.css">
+
+        
+
+    </head>
+    <body>
+
+        <header class="header-area navbar-fade" id="header">
+            <nav class="navbar">
+                <a class="navbar-brand" id="navbarBrand">HOME</a>
+                <a class="navbar-toggler" id="toggleBtn"><i class="fa fa-bars"></i></a>
+                <div class="navbar-menu" id="menu">
+                    <div class="nav-item"><a class="nav-link" id="navbarAbout">about</a></div>
+                    <div class="nav-item"><a class="nav-link" id="navbarSkills">skills</a></div>
+                    <div class="nav-item"><a class="nav-link" id="navbarPortfolio">portfolio</a></div>
+                    <div class="nav-item"><a class="nav-link" id="navbarContact">contact</a></div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="section-container">
+            <div class="welcome-area">
+                <div class="container">
+                    <div class="image-slide fade">
+                        <img src="img/code-1839406_1920.jpg">
+                    </div>
+                    <div class="image-slide fade">
+                        <img src="img/laptop-926775_1920.jpg">
+                    </div>
+                    <div class="image-slide fade">
+                        <img src="img/work-731198_1920.jpg">
+                    </div>
+                    <div class="image-slide fade">
+                        <img src="img/business-1839876_1920.jpg">
+                    </div>
+
+                    <a class="image-prev" id="imagePrev">&#10094;</a> <!--왼쪽 화살표-->
+                    <a class="image-next" id="imageNext">&#10095;</a> <!--오른쪽 화살표-->
+                
+                    <div class="dots">
+                        <span class="dot" id="firstDot"></span>
+                        <span class="dot" id="secondDot"></span>
+                        <span class="dot" id="thirdDot"></span>
+                        <span class="dot" id="forthDot"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <section class="about-area" id="about">
+                <div class="title">
+                    ABOUT
+                </div>
+                <div class="picture">
+                    <img src="img/nam.jpg">
+                    <div class="name">NAME</div>
+                    <div class="description">남 동 훈</div>
+                </div>
+                <div class="text">
+                    <div class="intro">
+                        안녕하세요. 끊임없는 성장을 추구하는 열정있는 주니어 개발자 입니다. 신기술에 대해 관심이 많으며 프론트 엔드 영역에 대해 계속 공부중입니다.
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="info">
+                                <i class="far fa-calendar-alt"></i> 1993년생(27살)
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="info">
+                                <i class="fa fa-graduation-cap"></i> 2013.03 ~ 2019.02 : 중부대학교(정보통신학과)
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="info">
+                                <i class="fa fa-building"></i> 2018.01 ~ 2018.01 : 도봉구청 건축과 엑셀 보조
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="info">
+                                <i class="fa fa-trophy"></i> 2018.06 : Start up! 창업 아이디어 우체통 공모전 - 우수상 수상
+                            </div>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </section>
+
+            <section class= "skills-area" id="skills">
+                <div class="title">
+                    SKILLS
+                </div>
+                <div class="container">
+                    <div class="item">
+                        <div class="skills">HTML / CSS / JAVASCRIPT</div>
+                        <div class="mybar" style="width: 80%;">80%</div>
+                        <!--<div class="mybar" style="width:25%;">50%</div>-->
+                    </div>
+                    <div class="item">
+                        <div class="skills">JAVA</div>
+                        <div class="mybar" style="width: 60%;">60%</div>
+                    </div>
+                    <div class="item">
+                        <div class="skills">DATABASE</div>
+                        <div class="mybar" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portfolio-area" id="portfolio">
+                <div class="title">
+                    PORTFOLIO
+                </div>
+                <div class="filter">
+                    <ul class="list">
+                        <li class="listItem active" id="all">
+                            ALL
+                        </li>
+                        <li class="listItem" id="uiux">
+                            JSP
+                        </li>
+                        <li class="listItem" id="java">
+                            Spring
+                        </li>
+                        <li class="listItem" id="db">
+                            
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="filterItem uiux">
+                        <div class="image">
+                            <div class="overlay"><i class="far fa-image"></i></div>
+                            <img src="img/blog.PNG">
+                        </div>
+                        <div class="main">
+                            음식 리뷰 블로그
+                        </div>
+                        <div class="sub">
+                            음식들을 리뷰할수 있는 게시판 형태의 블로그를 제작해보았습니다.<br>
+                            JSP를 통해 개발을 하고 My-sql을 이용하여 DB를 구축하였습니다.
+                        </div>
+                        <div class="text">
+                             
+                        </div>
+                    </div>
+                    <div class="filterItem java db">
+                        <div class="image">
+                            <div class="overlay"><i class="far fa-image"></i></div>
+                            <img src="img/movie.png">
+                        </div>
+                        <div class="main">
+                            영화 예약 웹페이지
+                        </div>
+                        <div class="sub">
+                            팀프로젝트로 영화 예약 웹을 만드는데 그중 스낵존을 맡아 제작을 하였습니다.<br>
+                            Spring Framework를 통해 개발을 하였고 Oracle을 이용하여 DB를 구축하였습니다.
+                        </div>
+                        <div class="text">
+                            포트 폴리오 상세 설명
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-area" id="contact">
+                <div class="title">
+                    CONTACT
+                </div>
+
+                <div class="content">
+                    <div class="email">wcn00133@naver.com</div><br>
+                    <div class="phone">010-5133-9753</div>
+                </div>
+
+            </section>
+
+        <footer class="footer-area">
+            <div class="info">
+                <p>Copyright © 2019 Dong hoon Nam, All rights reserved.</p>
+            </div>
+        </footer>
+
+        <div id="portfolioModal" class="modal">
+            <span class="close" id="modalClose">&times;</span>
+            <div class="container">
+                <img id="modalImage">
+                <div id="modalMain" class="modal-main"></div>
+                <div id="modalSub" class="modal-sub"></div>
+                <div id="modalText" class="modal-text"></div>
+            </div>
+        </div>
+
+        <!-- user script -->
+        <script src="portfolio.js"></script>
+    </body>
+</html>
