@@ -134,12 +134,10 @@ function viewPortfolio(event) {
     var itemNode = overlayNode.parentNode;
     var mainNode = itemNode.nextElementSibling;
     var subNode = mainNode.nextElementSibling;
-    var textNode = subNode.nextElementSibling;
     
     document.getElementById('modalImage').src = imageNode.src;
     document.getElementById('modalMain').innerHTML = mainNode.innerHTML;
     document.getElementById('modalSub').innerHTML = subNode.innerHTML;
-    document.getElementById('modalText').innerHTML = textNode.innerHTML;
 
     document.getElementById('portfolioModal').style.display = 'block';
 }
@@ -147,6 +145,8 @@ function viewPortfolio(event) {
 document.getElementById('modalClose').addEventListener('click', function() {
     document.getElementById('portfolioModal').style.display = 'none';
 });
+
+document.getElementById('imagePrev')
 
 var filterItem = document.getElementsByClassName('overlay');
 

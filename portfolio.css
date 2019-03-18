@@ -569,6 +569,39 @@ section {
     color: #bbb;
 }
 
+#portfolioModal > .image-prev,
+#portfolioModal > .image-next {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 36%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+#portfolioModal > .image-prev {
+    left: 15%;
+}
+
+#portfolioModal > .image-next {
+    right: 15%;
+    border-radius: 3px 0 0 3px;
+}
+
+#portfolioModal > .image-prev:hover,
+#portfolioModal > .image-prev:focus,
+#portfolioModal > .image-next:hover,
+#portfolioModal > .image-next:focus{
+    color: #bbb;
+}
+
 #portfolioModal > .container {
     width: 100%;
     height: auto;
